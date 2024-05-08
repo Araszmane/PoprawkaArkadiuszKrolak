@@ -7,14 +7,179 @@
     <title>Hello Vite!</title>
   </head>
   <body>
-    // TODO: CV
-    // TOOD: do we need navigation in CV?
-    // TODO: include contact data, picture
-    // TODO: include education track
-    // TODO: include employment/experience track
-    // TODO: include skills
-    // TODO: include legal note
 
-    <script type="module" src="/main.js"></script>
+  <header>
+    <h1>
+      <a href="/" title="Go back to home page">
+        Curriculum Vitae
+      </a>
+    </h1>
+    <nav>
+      <ol>
+        <li>
+          <a href="#contact" title="Go to contact">
+            Contact
+          </a>
+        </li>
+        <li>
+          <a href="#skills" title="Go to skills">
+            Skills
+          </a>
+        </li>
+        <li>
+          <a href="#jobs" title="Go to job history">
+            Job History
+          </a>
+        </li>
+        <li>
+          <a href="#education" title="Go to education">
+            Education
+          </a>
+        </li>
+        <li>
+          <a href="#references" title="Go to references">
+            References
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </header>
+
+  <main>
+    <div id="basic-info">
+      <header>
+        <h1>
+          <img src="/img/cover-image.jpg" alt="Profile picture">
+          Offie The Cat
+        </h1>
+      </header>
+
+      <section id="contact">
+        <header>
+          <h1>Contact</h1>
+        </header>
+
+        <address>
+          <ul>
+            <li>
+              e-mail: <a href="mailto:jakub.bilski@upsl.edu.pl" title="Send e-mail">offie.the.cat@upsl.edu.pl</a>
+            </li>
+            <li>
+              mobile: <a href="tel:+48509382566" title="Make a call">+48 509382566</a>
+            </li>
+            <li>
+              address:
+              <a href="https://maps.app.goo.gl/seBbXqP5NZ6VsDhPA" title="See on Google Maps" target="_blank">
+                ul. Kozietulskiego 7, 76-200 Słupsk
+              </a>
+            </li>
+          </ul>
+        </address>
+      </section>
+
+      <section id="skills">
+        <header>
+          <h1>Skills</h1>
+        </header>
+
+        <ul>
+          <li>
+            Sleeping - 100%
+          </li>
+          <li>
+            Purring - 90%
+          </li>
+          <li>
+            Meowing - 10%
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div id="additional-info">
+      <section id="jobs">
+        <header>
+          <h1>Experience</h1>
+        </header>
+
+        <ul>
+          <li>
+            <h2>The Basement Night Club - mousekeeper - from 2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem dolores est et ipsum quia rem saepe totam ut voluptates? Eos expedita fugit neque non perspiciatis reprehenderit sed vel voluptatem?
+            </p>
+          </li>
+          <li>
+            <h2>Cat nursery - kitten - from 2023 - to 2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem dolores est et ipsum quia rem saepe totam ut voluptates? Eos expedita fugit neque non perspiciatis reprehenderit sed vel voluptatem?
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <header>
+          <h1>Education</h1>
+        </header>
+
+        <ul>
+          <li>
+            <h2>Cat preschool - from 2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem dolores est et ipsum quia rem saepe totam ut voluptates? Eos expedita fugit neque non perspiciatis reprehenderit sed vel voluptatem?
+            </p>
+          </li>
+          <li>
+            <h2>Cat nursery - from 2023 - to 2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem dolores est et ipsum quia rem saepe totam ut voluptates? Eos expedita fugit neque non perspiciatis reprehenderit sed vel voluptatem?
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="references">
+        <header>
+          <h1>References</h1>
+        </header>
+
+        <ul>
+          <li>
+            <h2>Cat Headmaster</h2>
+            <address>
+              <ul>
+                <li>
+                  e-mail: <a href="mailto:jakub.bilski@upsl.edu.pl" title="Send e-mail">offie.the.cat@upsl.edu.pl</a>
+                </li>
+                <li>
+                  mobile: <a href="tel:+48509382566" title="Make a call">+48 509382566</a>
+                </li>
+              </ul>
+            </address>
+          </li>
+          <li>
+            <h2>Cat Headmaster</h2>
+            <address>
+              <ul>
+                <li>
+                  e-mail: <a href="mailto:jakub.bilski@upsl.edu.pl" title="Send e-mail">offie.the.cat@upsl.edu.pl</a>
+                </li>
+                <li>
+                  mobile: <a href="tel:+48509382566" title="Make a call">+48 509382566</a>
+                </li>
+              </ul>
+            </address>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    Copyrights &copy; 2024 Offie The Cat. I consent to use my personal data...
+  </footer>
+
+  <script type="module" src="/main.js"></script>
   </body>
 </html>
