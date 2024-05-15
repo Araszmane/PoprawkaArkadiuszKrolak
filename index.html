@@ -5,38 +5,46 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Vite!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./src/css/main.css">
   </head>
   <body>
 
-  <header>
-    <h1>
+  <header class="menu">
+    <h1 class="menu__header">
       <a href="/" title="Go back to home page">
         Curriculum Vitae
       </a>
     </h1>
-    <nav>
-      <ol>
-        <li>
+    <nav class="menu__nav">
+      <button class="menu__nav-button">Menu</button>
+      <ol class="menu__nav-items">
+        <li class="menu__nav-item">
           <a href="#contact" title="Go to contact">
             Contact
           </a>
         </li>
-        <li>
+        <li class="menu__nav-item">
           <a href="#skills" title="Go to skills">
             Skills
           </a>
         </li>
-        <li>
+        <li class="menu__nav-item">
           <a href="#jobs" title="Go to job history">
             Job History
           </a>
         </li>
-        <li>
+        <li class="menu__nav-item">
           <a href="#education" title="Go to education">
             Education
           </a>
         </li>
-        <li>
+        <li class="menu__nav-item">
           <a href="#references" title="Go to references">
             References
           </a>
