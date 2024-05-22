@@ -11,6 +11,10 @@
   padding: 10px;
 
   &__header {
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   &__nav {
@@ -24,13 +28,51 @@
 
     &-list {
       display: none;
+      position: absolute;
+      left: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
 
       @media (min-width: $breakpoint) {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        position: static;
       }
 
       &--active {
         display: block;
+      }
+
+      &-item {
+        border-bottom: 1px solid white;
+        min-height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          color: white;
+          padding: 10px;
+          text-decoration: none;
+          height: 100%;
+          width: 100%;
+
+          &:after {
+            content: '>';
+
+            @media (min-width: $breakpoint) {
+              display: none;
+            }
+          }
+        }
       }
     }
   }
