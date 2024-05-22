@@ -34,7 +34,7 @@ body {
     display: block;
 }
 
-.menu__nav-items {
+.menu__nav-list {
     display: none;
 }
 
@@ -42,4 +42,14 @@ main {
     background-color: #eee;
     width: 100%;
     max-width: 1000px;
+}
+
+@media (min-width: 1024px) {
+    .menu__nav-button {
+        display: none;
+    }
+
+    .menu__nav-list {
+        display: block;
+    }
 }
