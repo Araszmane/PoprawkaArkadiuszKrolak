@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+/*body > header*/
+.menu {
+  width: 100%;
+  max-width: 1000px;
+  background-color: red;
+  /*margin: auto;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.menu__nav-button {
+  display: block;
+}
+
+.menu__nav-list {
+  display: none;
+}
+
+main {
+  background-color: #eee;
+  width: 100%;
+  max-width: 1000px;
+}
+
+@media (min-width: $breakpoint) {
+  .menu__nav-button {
+    display: none;
+  }
+
+  .menu__nav-list {
+    display: block;
+  }
+}
