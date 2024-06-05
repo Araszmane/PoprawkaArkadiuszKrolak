@@ -1,5 +1,17 @@
-const toggleMenuEl = document.getElementById('js-toggle-menu');
+const MENU_EL_ID = 'js-menu';
+const MENU_TOGGLE_EL_ID = 'js-toggle-menu';
+const ACTIVE_CLASS_NAME = 'menu__nav-list--active';
+
+const toggleMenuEl = document.getElementById(MENU_TOGGLE_EL_ID);
 toggleMenuEl?.addEventListener('click', () => {
-    const menuEl = document.getElementById('js-menu');
-    menuEl?.classList.toggle('menu__nav-list--active');
+    const menuEl = document.getElementById(MENU_EL_ID);
+    menuEl?.classList.toggle(ACTIVE_CLASS_NAME);
+});
+
+const mediaQuery = window.matchMedia('(min-width: 1024px)');
+mediaQuery.addEventListener('change', () => {
+    if (mediaQuery.matches) {
+        const menuEl = document.getElementById(MENU_EL_ID);
+        menuEl?.classList.remove(ACTIVE_CLASS_NAME);
+    }
 });
