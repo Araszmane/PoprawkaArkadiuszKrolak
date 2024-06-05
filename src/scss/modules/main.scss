@@ -1,5 +1,7 @@
+@use 'variables' as *;
+
 main {
-  background-color: #eee;
+  background-color: $primaryColor;
   width: 100%;
   max-width: 1000px;
 }

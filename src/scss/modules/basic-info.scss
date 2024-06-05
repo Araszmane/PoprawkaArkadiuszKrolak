@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+#basic-info {
+  color: $secondaryColor;
+}
+
+.profile {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3em;
+    text-transform: uppercase;
+
+    &-image {
+      filter: grayscale(100%);
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}
