@@ -23,3 +23,27 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+%header_type_1 {
+  h1 {
+    position: relative;
+    margin: 0;
+    padding: 5px 10px;
+    border-left: 10px solid $fourthColor;
+    color: $secondaryColor;
+    text-transform: uppercase;
+    z-index: 10;
+
+    &:before {
+      margin-top: -1px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: $fourthColor;
+      z-index: -1;
+    }
+  }
+}

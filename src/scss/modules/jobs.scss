@@ -1,0 +1,38 @@
+@use "variables" as *;
+
+.jobs {
+  margin: 40px 20px;
+  color: $secondaryColor;
+
+  &__header {
+
+  }
+
+  &__list {
+    margin: 0 0 0 5px;
+    padding: 0 0 0 15px;
+    list-style: none;
+    border-left: 2px solid $secondaryColor;
+
+    &-item {
+      &-title {
+
+      }
+
+      &-desc {
+
+      }
+
+      &:before {
+        margin: 20px 0 0 -21px;
+        position: absolute;
+        background: $secondaryColor;
+        mask-image: url("/img/icons/circle.svg");
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
