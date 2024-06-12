@@ -4,4 +4,27 @@ main {
   background-color: $primaryColor;
   width: 100%;
   max-width: 1000px;
+
+  @media (min-width: $breakpoint) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+#basic-info {
+  color: $secondaryColor;
+
+  @media (min-width: $breakpoint) {
+    width: 40%;
+  }
+}
+
+#additional-info {
+  color: $secondaryColor;
+
+  @media (min-width: $breakpoint) {
+    width: 60%;
+    background-color: $secondaryColor;
+    color: $primaryColor;
+  }
 }

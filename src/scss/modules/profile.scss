@@ -1,9 +1,5 @@
 @use 'variables' as *;
 
-#basic-info {
-  color: $secondaryColor;
-}
-
 .profile {
   &__header {
     display: flex;

@@ -2,7 +2,6 @@
 
 .jobs {
   margin: 40px 20px;
-  color: $secondaryColor;
 
   &__header {
 
@@ -13,6 +12,10 @@
     padding: 0 0 0 15px;
     list-style: none;
     border-left: 2px solid $secondaryColor;
+
+    @media (min-width: $breakpoint) {
+      border-left-color: $primaryColor;
+    }
 
     &-item {
       &-title {
@@ -32,6 +35,10 @@
         display: block;
         width: 10px;
         height: 10px;
+
+        @media (min-width: $breakpoint) {
+          background-color: $primaryColor;
+        }
       }
     }
   }
