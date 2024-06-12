@@ -1,6 +1,7 @@
 @use 'variables' as *;
 
 .menu {
+  z-index: 1000;
   width: 100%;
   max-width: 1000px;
   background-color: $ternanyColor;
@@ -51,6 +52,12 @@
         display: block;
         top: 10px;
         left: 10px;
+      }
+
+      &--active {
+        &:after {
+          background-image: url("/img/icons/close.svg");
+        }
       }
 
       @media (min-width: $breakpoint) {
